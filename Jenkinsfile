@@ -21,7 +21,7 @@ stages{
 				echo 'Failure'
 				emailext attachLog: true,
 					body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
-					to: 'dwiola123@gmail.com',
+					to: 'nnbienn@gmail.com',
 					subject: "Test failed"
 			}
 			success{
@@ -29,7 +29,7 @@ stages{
 				
 				emailext attachLog: true,
 					body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}",
-					to: 'dwiola123@gmail.com',
+					to: 'nnbienn@gmail.com',
 					subject: "Test success"
 			}
 		}	
